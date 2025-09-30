@@ -1,0 +1,15 @@
+The basic operation of the Evolver is to read in a datafile and take commands from the user. 
+
+The main command prompt is
+     Enter command:
+
+The most common commands are one letter (case is significant for these), sometimes with a numerical parameter. The most frequently used commands are:
+     g n     do n iterations  ('g' is for 'go')
+     r       refine the triangulation of surface 
+     P       graphics output (option 8 for geomview, option 3 for PostScript)
+     s       show surface on screen (Evolver's own simple graphics)
+     q       quit 
+
+An iteration is one evolution step. The motion for the step is calculated as follows: First, the force on each vertex is calculated from the gradient of the total energy 
+of the surface as a function of the position of that vertex. The force gives the direction of motion. Second, the force is made to conform to whatever constraints are applicable.
+Third, the actual motion is found by multiplying the force by a global scale factor.     

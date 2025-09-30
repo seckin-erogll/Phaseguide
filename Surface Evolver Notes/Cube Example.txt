@@ -1,0 +1,9 @@
+
+A sample datafile cube.fe comes with Evolver.
+ The initial surface is a unit cube. 
+ The surface bounds one body, and the body is constrained to have volume 1. 
+ There is no gravity or any other force besides surface tension. 
+ Hence the minimal energy surface will turn out to be a sphere.
+ 
+  This example illustrates the basic datafile format and some basic commands.
+
